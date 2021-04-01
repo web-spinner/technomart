@@ -73,6 +73,8 @@
     "dependencies": {
         "jquery": "^3.6.0",
         "jquery-ui": "^1.12.1",
+        "nouislider": "^14.6.4",
+        "paginationjs": "^2.1.5",
         "slick-carousel": "^1.8.1",
         "smart-grid": "^2.1.2"
     },
