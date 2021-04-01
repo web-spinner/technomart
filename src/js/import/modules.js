@@ -1,2 +1,2 @@
-import "%modules%/slider/slider";
+import "%modules%/carousel/carousel";
 import "%modules%/tabs/tabs";
