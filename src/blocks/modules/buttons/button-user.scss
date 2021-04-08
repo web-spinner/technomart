@@ -1,0 +1,70 @@
+.button-user {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  background-color: $bg-white;
+  border: none;
+  font-size: 21px;
+  color: $color-black;
+  outline: none;
+
+  &--auth {
+    padding-left: 48px;
+    padding-right: 27px;
+  }
+
+  &--reg {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  &--logout {
+    padding-left: 47px;
+    padding-right: 67px;
+  }
+}
+
+.button-user::before, .button-user::after {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: none;
+  width: 20px;
+  height: 17px;
+  content: '';
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.button-user--auth::before {
+  display: block;
+  left: 14px;
+  background-image: url('/img/icon-login.svg');
+}
+
+.button-user--logout::before {
+  display: block;
+  left: 13px;
+  background-image: url('/img/icon-user.svg');
+}
+
+.button-user--logout::after {
+  display: block;
+  right: 10px;
+  background-image: url('/img/icon-logout.svg');
+}
+
+.button-user:hover, .button:focus {
+  color: $color-red;
+  &::after, &::before {
+    opacity: 1;
+  }
+}
+
+.button-user:active {
+  color: rgba($color-black, 0.3);
+  &::after, &::before {
+    opacity: 0.3;
+  }
+}
