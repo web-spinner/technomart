@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+  width: 220px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+  text-align: center;
+  background-color: $bg-red-static;
+  fill: $color-white;
+  box-shadow: inset 0px -5px 0px 0px rgba(0,0,0,0.23);
+
+  &:hover, &:focus {
+    outline: none;
+    background-color: $bg-red-hover;
+  }
+
+  &:active {
+    background-color: $bg-red-active;
+  }
+}
