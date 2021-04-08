@@ -1,0 +1,10 @@
+@mixin font-family ($font: 'Cuprum') {
+  font-family: $font, Arial, Helvetica, sans-serif;
+}
+@mixin font ($font: 'Cuprum', $size: 15px, $weight: 400, $height: 1.5, $style: normal) {
+  font-family: $font, Arial, Helvetica, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-style: $style;
+}
