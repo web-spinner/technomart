@@ -33,33 +33,43 @@
     @@include("../blocks/modules/header/header.html")
     <main class="page-main">
       <h1 class="visually-hidden">Магазин Technomart</h1>
-      <div class="page page--category">
+      <div class="page-main__category">
         <div class="wrap">
           <section class="category">
             <h2 class="visually-hidden">Категории</h2>
             <ul class="category__list">
-              <li class="category__item category__item--material">
-                <h3 class="category__title">Материалы</h3>
-                <a class="category__link" href="#">На любой вкус</a>
+              <li class="category__item">
+                <div class="category__card category-card category-card--material category-card--new">
+                  <h3 class="category-card__title">Материалы</h3>
+                  <a class="button button--category category-card__link" href="#">На любой вкус</a>
+                </div>
               </li>
-              <li class="category__item category__item--tools">
-                <h3 class="category__title">Инструмент</h3>
-                <a class="category__link" href="#">На все сдучаи</a>
+              <li class="category__item">
+                <div class="category__card category-card category-card--tools">
+                  <h3 class="category-card__title">Инструмент</h3>
+                  <a class="button button--category category-card__link" href="#">На все сдучаи</a>
+                </div>
               </li>
-              <li class="category__item category__item--machinery">
-                <h3 class="category__title">Техника</h3>
-                <a class="category__link" href="#">Для стройки</a>
+              <li class="category__item">
+                <div class="category__card category-card category-card--machinery">
+                  <h3 class="category-card__title">Техника</h3>
+                  <a class="button button--category category-card__link" href="#">Для стройки</a>
+                </div>
               </li>
-              <li class="category__item category__item--discounts">
-                <h3 class="category__title">Скидки 50%</h3>
-                <a class="category__link" href="#">На 350 товаров</a>
+              <li class="category__item">
+                <div class="category__card category-card category-card--discounts">
+                  <h3 class="category-card__title">Скидки 50%</h3>
+                  <a class="button button--category category-card__link" href="#">На 350 товаров</a>
+                </div>
               </li>
-              <li class="category__item category__item--delivery category__item--new">
-                <h3 class="category__title">Доставка</h3>
-                <a class="category__link" href="#">Бесплатно</a>
+              <li class="category__item">
+                <div class="category__card category-card category--card--delivery">
+                  <h3 class="category-card__title">Доставка</h3>
+                  <a class="button button--category category-card__link" href="#">Бесплатно</a>
+                </div>
               </li>
-              <li class="category__item category__item--carousel">
-                <div class="carousel">
+              <li class="category__item">
+                <div class="category__carousel carousel">
                   <div class="carousel__item">
                     <div class="carousel__head">
                       <h3 class="carousel__title">Перфораторы</h3>
@@ -70,7 +80,7 @@
                         <img src="img/slide-1.jpg" srcset="img/slide-1@2x.jpg 2x, img/slide-1@3x.jpg 3x" alt="Перфораторы">
                       </picture>
                     </div>
-                    <a class="button button--primary carousel__btn" href="catalog.html">Открыть каталог</a>
+                    <a class="button button--primary button--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
                   </div>
                   <div class="carousel__item">
                     <div class="carousel__head">
@@ -82,7 +92,7 @@
                         <img src="img/slide-2.jpg" srcset="img/slide-2@2x.jpg 2x, img/slide-2@3x.jpg 3x" alt="Дрели">
                       </picture>
                     </div>
-                    <a class="button button--primary carousel__btn" href="catalog.html">Открыть каталог</a>
+                    <a class="button button--primary button--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
                   </div>
                 </div>
               </li>
