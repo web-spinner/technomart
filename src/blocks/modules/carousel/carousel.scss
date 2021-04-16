@@ -1,0 +1,95 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+  max-height: 266px;
+}
+
+.carousel__item {
+  position: relative;
+}
+
+.carousel__head {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  color: $color-white;
+}
+
+.carousel__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.carousel__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.0;
+}
+
+.carousel__btn {
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+}
+
+.carousel .slick-arrow {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate( 0, -50%);
+  box-sizing: border-box;
+  width: 22px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  font-size: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.carousel .slick-prev {
+  left: 30px;
+  background-image: url('../img/icon-left.svg');
+}
+
+.carousel .slick-next {
+  right: 20px;
+  background-image: url('../img/icon-right.svg');
+}
+
+.carousel__dots {
+  position: absolute;
+  left: 50%;
+  transform: translate( -50%, 0 );
+  top: 220px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  list-style: none;
+}
+
+.carousel__dots li + li {
+  margin-left: 12px;
+}
+
+.carousel__dots button {
+  box-sizing: border-box;
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 2px solid $bg-white;
+  border-radius: 50%;
+  background-color: $bg-white;
+  cursor: pointer;
+}
+
+.carousel__dots .slick-active button {
+  background-color: $bg-red;
+}

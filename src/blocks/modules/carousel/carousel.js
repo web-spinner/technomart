@@ -1,4 +1,7 @@
 import slick from 'slick-carousel';
 $(document).ready(function(){
-  $('.carousel').slick();
+  $('.carousel').slick({
+    dots: true,
+    dotsClass: 'carousel__dots'
+  });
 });
