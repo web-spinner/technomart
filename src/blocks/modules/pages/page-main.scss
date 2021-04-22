@@ -1,3 +1,22 @@
 .page-main__category {
   margin-top: 60px;
 }
+
+.page-main__popular {
+  margin-top: 50px;
+}
+
+.page-main__brands {
+  margin-top: 20px;
+}
+
+.page-main__services {
+  margin-top: 85px;
+  background-color: $bg-light-first;
+}
+
+.page-main__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
