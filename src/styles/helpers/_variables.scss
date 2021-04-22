@@ -1,5 +1,6 @@
 $color-black: #000;
 $color-white: #fff;
+$color-smoke: #a9a9a9;
 $color-dark: #32425c;
 $color-accent: #ffd180;
 $color-red: #ee3643;
@@ -9,7 +10,8 @@ $bg-dark-static: #32425c;
 $bg-dark-hover: #212a3a;
 $bg-dark-active: #161d29;
 $bg-dark-secondary: #32425c;
-$bg-light: #f4f8f9;
+$bg-light-first: #f4f8f9;
+$bg-light-second: #f9f5f0;
 $bg-white: #fff;
 $bg-blue: #3bbce3;
 $bg-green: #8ed78f;
@@ -22,6 +24,9 @@ $bg-red-static: #ee3643;
 $bg-red-hover: #ca2c37;
 $bg-red-active: #ba2732;
 $bg-purple: #dc91d8;
+$border-light: #eaeaea;
+$border-dark: #e5e5e5;
+$shadow-green: #367315;
 
 // media
 $mobile-width: 767px;
