@@ -1,0 +1,95 @@
+.card {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 220px;
+  padding-bottom: 18px;
+  border: 1px solid $border-light;
+  background-color: $color-white;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &--new::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 60px;
+    height: 59px;
+    background-image: url('../img/new-flag.png');
+    background-size: 60px 59px;
+    background-position: 0 0;
+    content: '';
+
+    @media (min-resolution: $resolution-dppx-2x),
+    (min-resolution: $resolution-dpi-2x) {
+      background-image: url('../img/new-flag@2x.png');
+    }
+
+    @media (min-resolution: $resolution-dppx-3x),
+    (min-resolution: $resolution-dpi-3x) {
+      background-image: url('../img/new-flag@3x.png');
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 25px 0px rgba(41,52,73,0.5);
+
+    .card__buttons {
+      display: block;  
+    }
+  }
+}
+
+.card__title {
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 100%;
+  max-width: 170px;
+  @include font-family('PT Sans'); 
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card__price-old {
+  margin: 0;
+  margin-top: 10px;
+  @include font-family('PT Sans'); 
+  font-size: 17px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-smoke;
+  text-decoration: line-through;
+}
+
+.card__price-btn {
+  margin: 0 auto;
+  margin-top: 38px;
+  @include font-family('PT Sans'); 
+}
+
+.card__price-old + .card__price-btn {
+  margin-top: 3px;
+}
+
+.card__buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 220px;
+  padding: 46px 0;
+  display: none;
+  background-color: $bg-white;
+  transition: all 0.3s;
+}
+
+.card__btn {
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
