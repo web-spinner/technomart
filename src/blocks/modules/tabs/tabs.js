@@ -1,8 +1,7 @@
-import tabs from "jquery-ui/ui/widgets/tabs";
+import tabs from "jquery-ui/ui/widgets/tabs.js";
 
 $(document).ready(function(){
   $( function() {
-    $("#tabs").tabs();
+    $("#tabs-ui").tabs();
   });
 });
-console.log('sfsdf');
