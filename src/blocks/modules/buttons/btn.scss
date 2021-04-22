@@ -1,0 +1,164 @@
+.btn {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  line-height: 1.5;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s; 
+
+  &--category {
+    max-width: 135px;
+    background-color: rgba(0, 0, 0, 0.1);
+    &:hover, &:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--primary {
+    padding-bottom: 9px;
+    background-color: $bg-red-static;
+    &:hover, &:focus {
+      background-color: $bg-red-hover;
+    }
+
+    &:active {
+      background-color: $bg-red-active;
+    }
+  }
+
+  &--carousel {
+    max-width: 195px;
+  }
+
+  &--popular {
+    max-width: 253px;
+  }
+
+  &--price {
+    position: relative;
+    max-width: 141px;
+    text-transform: uppercase;
+    background-color: transparent;
+    @include font-family('PT Sans'); 
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+
+    & span {
+      position: relative;
+      z-index: 1;
+    }
+
+    & svg {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      z-index: 0;
+      transform: translate(-50%, -50%);
+      fill: $bg-red-static;
+    }
+
+    &:hover, &:focus {
+      background-color: transparent;
+      & svg {
+        fill: $bg-red-hover;
+      }
+    }
+
+    &:active {
+      background-color: transparent;
+      & svg {
+        fill: $bg-red-active;
+      }
+    }
+  }
+
+  &--buy, &--bookmark {
+    max-width: 135px;
+  }
+
+  &--buy {
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: $bg-green-static;
+    box-shadow: inset 0px -3px 0px 0px $shadow-green;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 12px;
+      transform: translate(0, -50%);
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-image: url('../img/icon-cart.svg');
+      background-repeat: no-repeat;
+      opacity: 0.3;
+      content: '';
+    }
+
+    &:hover {
+      background-color: $bg-green-hover;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      background-color: $bg-green-active;
+      box-shadow: none;
+
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  &--bookmark {
+    padding-bottom: 8px;
+    border: 3px solid $bg-green-static;
+    color: $color-dark;
+
+    &:hover {
+      border: 3px solid $bg-dark-secondary;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--brands {
+    max-width: 253px;
+  }
+
+  &--services {
+    max-width: 195px;
+  }
+
+  &--about {
+    max-width: 220px;
+  }
+
+  &--contacts {
+    max-width: 300px;
+  }
+}
