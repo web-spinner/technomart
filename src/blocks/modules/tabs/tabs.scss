@@ -1,0 +1,144 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.tabs__list {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 240px;
+  position: relative;
+  margin: 0;
+  padding: 47px 0 100px;
+  list-style: none;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 100%;
+    background-image: url('../img/bg-shadow-tabs.png');
+    background-size: 10px auto;
+    background-repeat: no-repeat;
+    content: '';
+
+    @media (min-resolution: $resolution-dpi-2x),
+    (min-resolution: $resolution-dppx-2x) {
+      background-image: url('../img/bg-shadow-tabs@2x.png');
+    }
+
+    @media (min-resolution: $resolution-dpi-3x),
+    (min-resolution: $resolution-dppx-3x) {
+      background-image: url('../img/bg-shadow-tabs@3x.png');
+    }
+  }
+}
+
+.tabs__link {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  padding-top: 13px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+  font-size: 21px;  
+  font-weight: 700;
+  color: $color-white;
+  background-color: $bg-dark-secondary;
+  box-shadow: 0px 1px 0px 0px #293449, inset 0px 1px 0px 0px #405069;
+  outline: none;
+
+  &:hover, &:focus {
+    background-color: $bg-dark-first;
+  }
+
+  &:active {
+    color: $color-dark;
+    background-color: $bg-white;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+  }
+}
+
+.ui-tabs-active .tabs__link {
+  color: $color-dark;
+  background-color: $bg-white;
+  box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+.tabs__box {
+  flex-grow: 1;
+  margin-left: 80px;
+  padding-top: 40px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  &--delivery {
+    background-image: url('../img/bg-delivery.png');
+    background-size: 468px auto;
+
+    @media (min-resolution: $resolution-dpi-2x),
+    (min-resolution: $resolution-dppx-2x) {
+      background-image: url('../img/bg-delivery@2x.png');
+    }
+    @media (min-resolution: $resolution-dpi-3x),
+    (min-resolution: $resolution-dppx-3x) {
+      background-image: url('../img/bg-delivery@3x.png');
+    }
+
+  }
+
+  &--guarantee {
+    background-image: url('../img/bg-guarantee.png');
+    background-size: 389px auto;
+
+    @media (min-resolution: $resolution-dpi-2x),
+    (min-resolution: $resolution-dppx-2x) {
+      background-image: url('../img/bg-guarantee@2x.png');
+    }
+    @media (min-resolution: $resolution-dpi-3x),
+    (min-resolution: $resolution-dppx-3x) {
+      background-image: url('../img/bg-guarantee@3x.png');
+    }
+
+  }
+
+  &--credit {
+    background-image: url('../img/bg-credit.png');
+    background-size: 465px auto;
+
+    @media (min-resolution: $resolution-dpi-2x),
+    (min-resolution: $resolution-dppx-2x) {
+      background-image: url('../img/bg-credit@2x.png');
+    }
+    @media (min-resolution: $resolution-dpi-3x),
+    (min-resolution: $resolution-dppx-3x) {
+      background-image: url('../img/bg-credit@3x.png');
+    }
+
+  }
+}
+
+.tabs__title {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 400;
+  color: $color-dark;
+  text-transform: uppercase;
+}
+
+.tabs__text {
+  margin: 0;
+  margin-top: 15px;
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.tabs__btn {
+  margin-top: 25px;
+}
