@@ -11,6 +11,10 @@
   cursor: pointer;
 }
 
+.search__label svg {
+  transition: all 0.3s;
+}
+
 .search__input {
   box-sizing: border-box;
   width: 100%;
@@ -23,6 +27,7 @@
   font-size: 17px;
   line-height: 1.5;
   color: $color-white;
+  transition: all 0.3s;
 
   &::placeholder {
     font-size: 17px;

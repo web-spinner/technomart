@@ -25,6 +25,7 @@
   font-size: 17px;
   color: $color-white;
   background-color: $bg-dark-static;
+  transition: all 0.3s;
 
   &:hover, &:focus {
     background-color: $bg-dark-hover;
