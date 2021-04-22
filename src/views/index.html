@@ -41,31 +41,31 @@
               <li class="category__item">
                 <div class="category__card category-card category-card--material category-card--new">
                   <h3 class="category-card__title">Материалы</h3>
-                  <a class="button button--category category-card__link" href="#">На любой вкус</a>
+                  <a class="btn btn--category category-card__link" href="#">На любой вкус</a>
                 </div>
               </li>
               <li class="category__item">
                 <div class="category__card category-card category-card--tools">
                   <h3 class="category-card__title">Инструмент</h3>
-                  <a class="button button--category category-card__link" href="#">На все сдучаи</a>
+                  <a class="btn btn--category category-card__link" href="#">На все сдучаи</a>
                 </div>
               </li>
               <li class="category__item">
                 <div class="category__card category-card category-card--machinery">
                   <h3 class="category-card__title">Техника</h3>
-                  <a class="button button--category category-card__link" href="#">Для стройки</a>
+                  <a class="btn btn--category category-card__link" href="#">Для стройки</a>
                 </div>
               </li>
               <li class="category__item">
                 <div class="category__card category-card category-card--discounts">
                   <h3 class="category-card__title">Скидки 50%</h3>
-                  <a class="button button--category category-card__link" href="#">На 350 товаров</a>
+                  <a class="btn btn--category category-card__link" href="#">На 350 товаров</a>
                 </div>
               </li>
               <li class="category__item">
                 <div class="category__card category-card category--card--delivery">
                   <h3 class="category-card__title">Доставка</h3>
-                  <a class="button button--category category-card__link" href="#">Бесплатно</a>
+                  <a class="btn btn--category category-card__link" href="#">Бесплатно</a>
                 </div>
               </li>
               <li class="category__item">
@@ -80,7 +80,7 @@
                         <img src="img/slide-1.jpg" srcset="img/slide-1@2x.jpg 2x, img/slide-1@3x.jpg 3x" alt="Перфораторы">
                       </picture>
                     </div>
-                    <a class="button button--primary button--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
+                    <a class="btn btn--primary btn--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
                   </div>
                   <div class="carousel__item">
                     <div class="carousel__head">
@@ -92,7 +92,7 @@
                         <img src="img/slide-2.jpg" srcset="img/slide-2@2x.jpg 2x, img/slide-2@3x.jpg 3x" alt="Дрели">
                       </picture>
                     </div>
-                    <a class="button button--primary button--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
+                    <a class="btn btn--primary btn--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
                   </div>
                 </div>
               </li>
@@ -100,16 +100,16 @@
           </section>
         </div>
       </div>
-      <div class="page page--popular">
+      <div class="page-main__popular">
         <div class="wrap">
           <section class="popular">
-            <div class="page__head popular__head">
-              <h2 class="page__title popular__title">Популярные товары:</h2>
-              <a class="button button--primary popular__btn" href="#">Все популярные товары</a>
+            <div class="header-box popular__head">
+              <h2 class="header-box__title">Популярные товары:</h2>
+              <a class="btn btn--primary btn--popular header-box__btn" href="#">Все популярные товары</a>
             </div>
             <ul class="popular__list">
               <li class="popular__item">
-                <section class="popular__card card">
+                <article class="popular__card card">
                   <div class="card__img">
                     <picture>
                       <img src="img/bosch-9000.jpg" srcset="img/bosch-9000@2x.jpg 2x, img/bosch-9000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 9000">
@@ -117,15 +117,20 @@
                   </div>
                   <h3 class="card__title">Перфоратор BOSCH BFG 9000</h3>
                   <p class="card__price-old">32500 Р.</p>
-                  <p class="card__price">25500 Р.</p>
-                  <div class=".visually-hidden card__buttons">
-                    <a class="button button--buy card__link" href="#">Купить</a>
-                    <button class="button button--bookmark card__btn">В закладки</button>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>25500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
                   </div>
-                </section>
+                </article>
               </li>
               <li class="popular__item">
-                <div class="popular__card card">
+                <article class="popular__card card">
                   <div class="card__img">
                     <picture>
                       <img src="img/bosch-3000.jpg" srcset="img/bosch-3000@2x.jpg 2x, img/bosch-3000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 3000">
@@ -133,15 +138,20 @@
                   </div>
                   <h3 class="card__title">Перфоратор BOSCH BFG 3000</h3>
                   <p class="card__price-old">22500 Р.</p>
-                  <p class="card__price">15500 Р.</p>
-                  <div class=".visually-hidden card__buttons">
-                    <a class="button button--buy card__link" href="#">Купить</a>
-                    <button class="button button--bookmark card__btn">В закладки</button>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>15500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
                   </div>
-                </div>
+                </article>
               </li>
               <li class="popular__item">
-                <div class="popular__card card">
+                <article class="popular__card card">
                   <div class="card__img">
                     <picture>
                       <img src="img/bosch-6000.jpg" srcset="img/bosch-6000@2x.jpg 2x, img/bosch-6000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 6000">
@@ -149,45 +159,55 @@
                   </div>
                   <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
                   <p class="card__price-old">30500 Р.</p>
-                  <p class="card__price">25500 Р.</p>
-                  <div class=".visually-hidden card__buttons">
-                    <a class="button button--buy card__link" href="#">Купить</a>
-                    <button class="button button--bookmark card__btn">В закладки</button>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>25500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
                   </div>
-                </div>
+                </article>
               </li>
               <li class="popular__item">
-                <div class="popular__card card card--new">
+                <article class="popular__card card card--new">
                   <div class="card__img">
                     <picture>
                       <img src="img/bosch-2000.jpg" srcset="img/bosch-2000@2x.jpg 2x, img/bosch-2000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 2000">
                     </picture>
                   </div>
                   <h3 class="card__title">Перфоратор BOSCH BFG 2000</h3>
-                  <p class="card__price">12500 Р.</p>
-                  <div class=".visually-hidden card__buttons">
-                    <a class="button button--buy card__link" href="#">Купить</a>
-                    <button class="button button--bookmark card__btn">В закладки</button>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>12500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
                   </div>
-                </div>
+                </article>
               </li>
             </ul>
           </section>
         </div>
       </div>
-      <div class="page page--brands">
+      <div class="page-main__brands">
         <div class="wrap">
           <section class="brands">
-            <div class="page__head brands__head">
-              <h2 class="page__title brands__title">Популярные производители:</h2>
-              <a class="button button--primary brands__btn" href="#">Все производители</a>
+            <div class="header-box brands__head">
+              <h2 class="header-box__title brands__title">Популярные производители:</h2>
+              <a class="btn btn--primary btn--brands header-box__btn" href="#">Все производители</a>
             </div>
             <ul class="brands__list">
               <li class="brands__item">
                 <a class="brands__link" href="#">
                   <div class="brands__logo">
                     <picture>
-                      <img src="img/bosch.png" srcset="img/bosch@2x.png 2x, img/bosch@3x.png 3x" width="220" alt="Bosch">
+                      <img src="img/bosch.png" srcset="img/bosch@2x.png 2x, img/bosch@3x.png 3x" alt="Bosch">
                     </picture>
                   </div>
                 </a>
@@ -259,14 +279,12 @@
           </section>
         </div>
       </div>
-      <div class="page page--services">
+      <div class="page-main__services">
         <div class="wrap">
           <section class="services">
-            <div class="services__head">
-              <h2 class="page__title services__title">Сервисы</h2>
-              <p class="page__text services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            </div>
-            <div id="services__tabs tabs">
+            <h2 class="services__title">Сервисы</h2>
+            <p class="services__desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <div class="services__tabs tabs" id="tabs-ui">
               <ul class="tabs__list">
                 <li class="tabs__item"><a class="tabs__link" href="#tabs-1">Доставка</a></li>
                 <li class="tabs__item"><a class="tabs__link" href="#tabs-2">Гарантия</a></li>
@@ -274,43 +292,45 @@
               </ul>
               <div class="tabs__box tabs__box--delivery" id="tabs-1">
                 <h3 class="tabs__title">Доставка</h3>
-                <p class="page__text tabs__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <p class="tabs__text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
               </div>
               <div class="tabs__box tabs__box--guarantee" id="tabs-2">
                 <h3 class="tabs__title">Гарантия</h3>
-                <p class="page__text tabs__text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                <p class="tabs__text">Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгаранием, <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br> сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
               </div>
               <div class="tabs__box tabs__box--credit" id="tabs-3">
                 <h3 class="tabs__title">Кредит</h3>
-                <p class="page__text tabs__text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                <a class="button button--primary tabs__btn" href="#">Отправить заявку</a>
+                <p class="tabs__text">Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.</p>
+                <a class="btn btn--primary btn--services tabs__btn" href="#">Отправить заявку</a>
               </div>
             </div>
           </section>
         </div>
       </div>
-      <div class="page page--info">
-        <div class="wrap">
-          <div class="page__box">
-            <section class="page__about about">
-              <h2 class="page__title about__title">Компания «Техномарт»</h2>
-              <p class="page__text about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-              <p class="page__text about__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-              <ul class="about__list">
-                <li class="about__item">Деловые линии</li>
-                <li class="about__item">Автотрейдинг</li>
-                <li class="about__item">ЖелДорЭкспедиция</li>
-              </ul>
-              <a class="button button--primary about__btn" href="#">Подробнее о компании</a>
-            </section>
-            <section class="page__contacts contacts">
-              <h2 class="page__title contacts__title">Контакты</h2>
-              <p class="page__text contacts__text">Вы можете забрать товар сами, 
-              заехав в наш офис:</p>
-              <button class="contacts__map-btn"></button>
-              <button class="button button--primary contacts__btn" href="#">Заблудились? Напишите нам!</button>
-            </section>
-          </div>
+      <div class="wrap">
+        <div class="page-main__info">
+          <section class="page-main__about about">
+            <h2 class="about__title">Компания «Техномарт»</h2>
+            <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p class="about__text about__text--bottom">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <ul class="about__list">
+              <li class="about__item">Деловые линии</li>
+              <li class="about__item">Автотрейдинг</li>
+              <li class="about__item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="btn btn--primary btn--about about__btn" href="#">Подробнее о компании</a>
+          </section>
+          <section class="page-main__contacts contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__text">Вы можете забрать товар сами, 
+            заехав в наш офис:</p>
+            <button class="contacts__map-btn">
+              <picture>
+                <img width="300" src="img/map-small.png" srcset="img/map-small@2x.png 2x, img/map-small@3x.png 3x" alt="Большая Конюшенная ул, 19">
+              </picture>
+            </button>
+            <button class="btn btn--primary btn--contacts contacts__btn" href="#">Заблудились? Напишите нам!</button>
+          </section>
         </div>
       </div>
     </main>
