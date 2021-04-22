@@ -1,0 +1,23 @@
+.services {
+  padding-top: 55px;
+}
+.services__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.services__desc {
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
+  margin-top: 20px;
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.services__tabs {
+  margin-top: 20px;
+}
