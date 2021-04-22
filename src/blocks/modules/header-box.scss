@@ -1,0 +1,19 @@
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 24px;
+  padding-left: 30px;
+  padding-right: 25px;
+  background-color: $bg-light-second;
+}
+
+.header-box__title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+  color: $color-dark;
+  text-transform: uppercase;
+}
