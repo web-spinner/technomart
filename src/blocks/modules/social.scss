@@ -1,0 +1,38 @@
+.social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item + .social__item {
+  margin-left: 4px;
+}
+
+.social__link {
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: $bg-social-static;
+  outline: none;
+  transition: all 0.3s;
+
+  &:hover, &:focus {
+    background-color: $bg-social-hover;
+  }
+
+  &:active {
+    background-color: $bg-social-active;
+  }
+}
+
+.social__link svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $color-white;
+}

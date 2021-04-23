@@ -17,4 +17,9 @@
   &:active {
     background-color: $bg-red-active;
   }
+
+  &--big {
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
 }
