@@ -16,16 +16,19 @@
 }
 
 .nav-pages__link {
-  display: block;
+  font-size: 17px;
+  color: $color-white;
   text-align: center;
+  transition: all 0.3s;
+}
+
+.nav-pages--header .nav-pages__link {
+  display: block;
   padding-top: 15px;
   padding-bottom: 19px;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 17px;
-  color: $color-white;
   background-color: $bg-dark-static;
-  transition: all 0.3s;
 
   &:hover, &:focus {
     background-color: $bg-dark-hover;
