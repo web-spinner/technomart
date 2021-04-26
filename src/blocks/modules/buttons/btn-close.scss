@@ -1,0 +1,21 @@
+.btn-close {
+  box-sizing: border-box;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  svg {
+    fill: $bg-red-static;
+
+    &:hover, &:focus {
+      fill: $bg-red-hover;
+    }
+
+    &:active {
+      fill: $bg-red-active;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<section class="popup-write" style="display:none;">
+  <h2 class="visually-hidden">Напишите нам!</h2>
+  <form action="#">
+    <div class="popup-write__wrap">
+      <div class="popup-write__inner popup-write__inner--flex">
+        <ul class="popup-write__list">
+          <li class="popup-write__item poput-write__item--name">
+            <label class="label popup-write__label" for="write-name">Ваше имя:</label>
+            <input class="input input--text popup-write__input" id="write-name" type="text" placeholder="Представьтесь, пожалуйста" name="name">
+          </li>
+          <li class="popup-write__item popup-write__item--email">
+            <label class="label popup-write__label" for="write-email">Ваш e-mail:</label>
+            <input class="input input--email popup-write__input" id="write-email" type="email" placeholder="Для отправки ответа" name="email">
+          </li>
+          <li class="popup-write__item popup-write__item--message">
+            <label class="label popup-write__label" for="write-message">Текст письма:</label>
+            <textarea class="textarea textarea--write popup-write__textarea" id="write-message" placeholder="В свободной форме" name="message"></textarea>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup-write__wrap popup-write__wrap--btn">
+      <div class="popup-write__inner">
+        <button class="btn btn--primary btn--write popup-write__btn popup-write__btn-submit" type="submit">Отправить</button>
+      </div>
+    </div>
+  </form>
+  <button class="btn-close popup-write__btn-close" id="btn-close-write" type="button">
+    <span class="visually-hidden">Закрыть</span>
+    <svg width="21" height="21" aria-hidden="true">
+      <use xlink:href="/img/sprites/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+</section>

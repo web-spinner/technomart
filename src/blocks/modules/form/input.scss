@@ -1,0 +1,27 @@
+.input, .input::placeholder {
+ @include font-family('PT Sans');
+ font-size: 13px;
+}
+
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 220px;
+  padding: 10px 15px;
+  background-color: $bg-white;
+  border: 2px solid $bg-input-static;
+  color: $color-dark;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $bg-input-hover;
+  }
+
+  &:focus {
+    border: 2px solid $bg-input-focus;
+  }
+}
+
+.input::placeholder {
+  color: $color-smoke;
+}

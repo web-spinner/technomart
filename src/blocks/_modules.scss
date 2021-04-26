@@ -1,6 +1,10 @@
 @import "modules/header/header";
 @import "modules/buttons/btn";
+@import "modules/buttons/btn-close";
 @import "modules/buttons/button-user";
+@import "modules/form/label.scss";
+@import "modules/form/input.scss";
+@import "modules/form/textarea.scss";
 @import "modules/logo/logo";
 @import "modules/search/search";
 @import "modules/nav/nav-menu";
@@ -21,3 +25,4 @@
 @import "modules/contacts";
 @import "modules/social";
 @import "modules/footer/footer";
+@import "modules/popup/popup-write";
