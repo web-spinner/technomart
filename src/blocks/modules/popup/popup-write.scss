@@ -8,7 +8,6 @@
   width: 100%;
   max-width: 620px;
   padding-top: 40px;
-  padding-bottom: 37px;
   background-color: $bg-white;
   border-top: 7px solid $bg-red;
   box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.75);
@@ -29,6 +28,8 @@
 .popup-write__wrap--btn {
   margin-top: 30px;
   padding-top: 37px;
+  padding-bottom: 37px;
+  background-color: $bg-smoke;
 }
 
 .popup-write__inner {
