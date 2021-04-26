@@ -1,0 +1,33 @@
+.popup-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 940px;
+  box-shadow: 0px 0px 15px 1px rgba(47,42,43,0.5);
+  background-color: $bg-white;
+}
+
+.popup-map::before {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100vw;
+  height: 100vw;
+  content: '';
+}
+
+.popup-map__btn-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.popup-map__hint {
+  color: $color-red-secondery;
+}

@@ -28,6 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d9b90687-9646-4066-825d-0b741ff376d4&lang=ru_RU"
+        type="text/javascript"></script>
   </head>
   <body>
     @@include("../blocks/modules/header/header.html")
@@ -324,7 +326,7 @@
             <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__text">Вы можете забрать товар сами, 
             заехав в наш офис:</p>
-            <button class="contacts__map-btn">
+            <button class="contacts__map-btn" id="btn-open-map">
               <picture>
                 <img width="300" src="img/map-small.png" srcset="img/map-small@2x.png 2x, img/map-small@3x.png 3x" alt="Большая Конюшенная ул, 19">
               </picture>
@@ -336,6 +338,7 @@
     </main>
     @@include("../blocks/modules/footer/footer.html")
     @@include("../blocks/modules/popup/popup-write.html")
+    @@include("../blocks/modules/popup/popup-map.html")
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
   </body>
