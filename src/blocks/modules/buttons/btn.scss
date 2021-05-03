@@ -165,4 +165,23 @@
   &--write {
     max-width: 460px;
   }
+
+  &--submit {
+    max-width: 140px;
+    background-color: $bg-white;
+    border: 1px solid $border-dark;
+    border-radius: 5px;
+    @include font-family('PT Sans');
+    font-size: 13px;
+    color: $color-black;
+
+    &:hover, &:focus {
+      background-color: $bg-green-hover;
+      color: $color-white;
+    }
+
+    &:active {
+      background-color: $bg-green-active;
+    }
+  }
 }
