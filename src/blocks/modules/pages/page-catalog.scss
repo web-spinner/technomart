@@ -1,0 +1,68 @@
+.page-catalog {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-catalog__header {
+  margin-top: 20px;
+}
+
+.page-catalog__subtitle {
+  margin-top: 20px;
+}
+
+.page-catalog__grid {
+  display: grid;
+  grid-template: "filter sort sort sort" "filter products products products" "filter pagination pagination pagination";
+  grid-template-columns: 220px repeat(3, 1fr);
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.page-catalog__filter {
+  grid-area: filter;
+}
+
+.page-catalog__sort {
+  grid-area: sort;
+  margin-left: 20px;
+}
+
+.page-catalog__products {
+  grid-area: products;
+}
+
+.page-catalog__pagination {
+  grid-area: pagination;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.page-catalog__footer {
+  margin-top: 60px;
+  padding-top: 68px;
+  padding-bottom: 65px;
+  background-color: $bg-blue-light;
+}
+
+.page-catalog__footer .page-catalog__subtitle {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.page-catalog__footer .page-catalog__desc {
+  margin: 0;
+  margin-top: 25px;
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-black;
+}

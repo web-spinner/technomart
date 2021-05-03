@@ -1,0 +1,60 @@
+.filter {
+  width: 100%;
+  max-width: 220px;
+}
+
+.filter__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px 18px;
+  border-radius: 4px;
+  background-color: $bg-pink;
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.filter__subtitle {
+  margin: 0;
+  @include font-family('PT Sans');
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+.filter__range-slider {
+  margin-top: 9px;
+}
+
+.filter__box {
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-dark;
+
+  &-power {
+    border: none;
+  }
+
+  &-brands, &-power {
+    margin-top: 17px;
+  }
+}
+
+.filter__list {
+  margin: 0;
+  margin-top: 13px;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__item + .filter__item {
+  margin-top: 18px;
+}
+
+.filter__submit {
+  margin-top: 60px;
+}

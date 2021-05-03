@@ -1,0 +1,54 @@
+.pagination .pagination-list li {
+  border: none;
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.pagination .pagination-list li > a,
+.pagination .pagination-list li:first-child > a,
+.pagination .pagination-list li:last-child > a {
+  border-radius: 3px;
+}
+
+
+.pagination .pagination-list li + li {
+  margin-left: 10px;
+}
+
+.pagination .pagination-list li > a {
+  min-width: 38px;
+  height: 38px;
+  border: 1px solid $border-pagination-static;
+  background-color: $bg-white;
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 38px;
+  font-weight: 400;
+  color: $color-black;
+  text-transform: uppercase;
+
+  &:focus, &:hover {
+    background-color: $bg-white;
+    border: 1px solid $border-pagination-hover;
+  }
+
+  &:active {
+    background-color: $bg-white;
+    border: 1px solid $border-pagination-active;
+  }
+}
+
+.pagination .pagination-list .pagination-active > a {
+  &, &:focus, &:hover, &:active {
+    color: $bg-white;
+    background-color: $bg-red;
+    border: 1px solid $border-red;
+  }
+}
+
+.pagination .pagination-list .pagination-prev,  
+.pagination .pagination-list .pagination-next {
+  min-width: 140px;
+}

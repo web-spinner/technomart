@@ -1,0 +1,88 @@
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 19px;
+  background-color: $bg-pink; 
+  border-radius: 4px;
+}
+
+.sort__title {
+  margin: 0;
+  padding: 0;
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.sort__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sort__link {
+  @include font-family('PT Sans');
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: rgba($color-black, 0.3);
+  text-transform: uppercase;
+  border-bottom: 1px dotted $border-red; 
+  outline: none;
+  transition: all 0.3s;
+
+  &[href]:focus, &[href]:hover {
+    color: rgba($color-black, 1);
+    border-bottom: 1px solid $border-red; 
+  }
+
+  &[href]:active, &--active{
+    color: $color-red;
+    border: none;
+  }
+}
+
+.sort__link-arrow {
+  border: none; 
+  svg {
+    fill: rgba($color-black, 0.3);
+  }
+
+  &[href]:focus, &[href]:hover {
+    border: none; 
+    svg {
+      fill: rgba($color-black, 1);
+    }
+  }
+
+  &[href]:active, &--active{
+    border: none;
+    svg {
+      fill: $color-red;
+    }
+  }
+}
+
+.sort__item {
+  margin-right: 68px;
+}
+
+.sort__item:nth-child(3) {
+  margin-right: 40px;
+}
+
+.sort__item--arrow {
+  margin-right: 21px;
+}
+
+.sort__item--arrow + .sort__item--arrow {
+  margin-right: 0;
+}
+
