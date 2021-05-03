@@ -2,9 +2,11 @@
 @import "modules/buttons/btn";
 @import "modules/buttons/btn-close";
 @import "modules/buttons/button-user";
-@import "modules/form/label.scss";
-@import "modules/form/input.scss";
-@import "modules/form/textarea.scss";
+@import "modules/form/label";
+@import "modules/form/input";
+@import "modules/form/textarea";
+@import "modules/form/checkbox";
+@import "modules/form/radio";
 @import "modules/logo/logo";
 @import "modules/search/search";
 @import "modules/nav/nav-menu";
@@ -12,6 +14,7 @@
 @import "modules/nav/nav-category";
 @import "modules/user-menu/user-menu";
 @import "modules/pages/page-main";
+@import "modules/pages/page-catalog";
 @import "modules/category/category";
 @import "modules/category/category-card";
 @import "modules/carousel/carousel";
@@ -23,6 +26,12 @@
 @import "modules/tabs/tabs";
 @import "modules/about";
 @import "modules/contacts";
+@import "modules/breadcrumbs";
+@import "modules/filter";
+@import "modules/range-slider/range-slider";
+@import "modules/sort";
+@import "modules/products";
+@import "modules/pagination/pagination";
 @import "modules/social";
 @import "modules/footer/footer";
 @import "modules/popup/popup-write";
