@@ -1,87 +1,85 @@
-<div class="page-header">
-  <header class="header">
-    <div class="header__box header__box--top">
-      <div class="wrap">
-        <nav class="header__nav-menu nav-menu">
-          <ul class="nav-menu__list">
-            <li class="nav-menu__item nav-menu__item--logo">
-              <a class="nav-menu__logo logo" href="/index.html">
-                <svg width="147" height="18" role="img">
-                  <use xlink:href="/img/sprites/sprite.svg#logo"></use>
+<header class="header">
+  <div class="header__box header__box--top">
+    <div class="wrap">
+      <nav class="header__nav-menu nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item nav-menu__item--logo">
+            <a class="nav-menu__logo logo" href="/index.html">
+              <svg width="147" height="18" role="img">
+                <use xlink:href="/img/sprites/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-menu__item nav-menu__item--search">
+            <div class="nav-menu__search search">
+              <input class="search__input" type="search" id="search" placeholder="Поиск:">
+              <label class="search__label" for="search">
+                <svg width="17" height="17" aria-hidden="true" role="presentation">
+                  <use xlink:href="/img/sprites/sprite.svg#icon-search"></use>
                 </svg>
-              </a>
+              </label>
+            </div>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--bookmark" href="#">Закладки: 0</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--basket" href="#">Корзина: 0</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--order" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__box header__box--middle">
+    <div class="wrap">
+      <div class="header__flex">
+        <div class="header__desc-wrap">
+          <p class="header__desc-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        </div>
+        <div class="header__contacts">
+          <p class="header__tel">+7 (812) 555-05-55</p>
+          <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="header__user-menu user-menu">
+          <ul class="user-menu__list user-menu__list--buttons">
+            <li class="user-menu__item--auth">
+              <a class="button-user button-user--auth user-menu__btn" href="#">Войти</a>
             </li>
-            <li class="nav-menu__item nav-menu__item--search">
-              <div class="nav-menu__search search">
-                <input class="search__input" type="search" id="search" placeholder="Поиск:">
-                <label class="search__label" for="search">
-                  <svg width="17" height="17" aria-hidden="true" role="presentation">
-                    <use xlink:href="/img/sprites/sprite.svg#icon-search"></use>
-                  </svg>
-                </label>
-              </div>
+            <li class="user-menu__item--reg">
+              <a class="button-user button-user--reg user-menu__btn" href="#">Регистрация</a>
             </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-menu__link--bookmark" href="#">Закладки: 0</a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-menu__link--basket" href="#">Корзина: 0</a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-menu__link--order" href="#">Оформить заказ</a>
+            <li class="user-menu__item--logout">
+              <a class="button-user button-user--logout user-menu__btn user-menu__item--hidden" href="#">Равшан Джамшутович</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="header__box header__box--middle">
-      <div class="wrap">
-        <div class="header__flex">
-          <div class="header__desc-wrap">
-            <p class="header__desc-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          </div>
-          <div class="header__contacts">
-            <p class="header__tel">+7 (812) 555-05-55</p>
-            <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-          <div class="header__user-menu user-menu">
-            <ul class="user-menu__list user-menu__list--buttons">
-              <li class="user-menu__item--auth">
-                <a class="button-user button-user--auth user-menu__btn" href="#">Войти</a>
-              </li>
-              <li class="user-menu__item--reg">
-                <a class="button-user button-user--reg user-menu__btn" href="#">Регистрация</a>
-              </li>
-              <li class="user-menu__item--logout">
-                <a class="button-user button-user--logout user-menu__btn user-menu__item--hidden" href="#">Равшан Джамшутович</a>
-              </li>
-            </ul>
-            <ul class="user-menu__list user-menu__list--links user-menu__list--hidden">
-              <li class="user-menu__item--orders">
-                <a class="user-menu__link" href="#">Мои заказы</a>
-              </li>
-              <li class="user-menu__item--account">
-                <a class="user-menu__link" href="#">Личный кабинет</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="user-menu__list user-menu__list--links user-menu__list--hidden">
+            <li class="user-menu__item--orders">
+              <a class="user-menu__link" href="#">Мои заказы</a>
+            </li>
+            <li class="user-menu__item--account">
+              <a class="user-menu__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="header__box header__box--bottom">
-      <div class="wrap">
-        <nav class="header__nav-pages nav-pages nav-pages--header">
-          <ul class="nav-pages__list">
-            <li class="nav-pages__item"><a class="nav-pages__link" href="/index.html">Главная</a></li>
-            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Компания</a></li>
-            <li class="nav-pages__item"><a class="nav-pages__link" href="/pages/catalog.html">Каталог</a></li>
-            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Новости</a></li>
-            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Спецпредложения</a></li>
-            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Доставка</a></li>
-            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+  </div>
+  <div class="header__box header__box--bottom">
+    <div class="wrap">
+      <nav class="header__nav-pages nav-pages nav-pages--header">
+        <ul class="nav-pages__list">
+          <li class="nav-pages__item"><a class="nav-pages__link" href="/index.html">Главная</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Компания</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="/pages/catalog.html">Каталог</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Новости</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Спецпредложения</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Доставка</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
-  </header>
-</div>
+  </div>
+</header>
