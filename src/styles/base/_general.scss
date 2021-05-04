@@ -35,7 +35,10 @@ a {
 }
 
 .wrap {
+  box-sizing: border-box;
   width: 100%;
-  max-width: 940px;
+  max-width: 1000px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
 }

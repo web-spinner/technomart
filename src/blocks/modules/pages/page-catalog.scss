@@ -13,11 +13,14 @@
 }
 
 .page-catalog__grid {
+  box-sizing: border-box;
   display: grid;
   grid-template: "filter sort sort sort" "filter products products products" "filter pagination pagination pagination";
   grid-template-columns: 220px repeat(3, 1fr);
   width: 100%;
-  max-width: 940px;
+  max-width: 1000px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
   margin-top: 20px;
 }
