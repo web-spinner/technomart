@@ -75,6 +75,10 @@
 }
 
 @media(max-width: $tablet-width){
+  .header {
+    padding-bottom: 30px;
+  }
+
   .header__box--middle {
     .header__flex {
       justify-content: space-around;
@@ -82,5 +86,13 @@
   }
   .header__desc-wrap {
     display: none;
+  }
+}
+
+@media(max-width: $mobile-width){
+  .header__box {
+    &--middle, &--bottom {
+      margin-top: 20px;
+    }
   }
 }

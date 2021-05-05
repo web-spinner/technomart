@@ -8,10 +8,6 @@
   padding: 0;
   list-style: none;
 
-  &--hidden {
-    display: none;
-  }
-
   &--links {
     margin-top: 3px;
   }
@@ -24,10 +20,6 @@
 
   &--reg {
     margin-left: auto;
-  }
-
-  &--hidden {
-    display: none;
   }
   
   &--orders {
@@ -63,5 +55,37 @@
   }
   &:active {
     color: rgba($color-dark, 0.3);
+  }
+}
+
+.user-menu {
+  .user-menu__list--hidden,
+  .user-menu__item--hidden {
+    display: none;
+  }
+}
+
+@media(max-width: $mobile-width){
+  .user-menu__list {
+    margin-top: 25px;
+    display: block;
+
+    &--links {
+      margin-top: 20px;
+    }
+  }
+
+  .user-menu__item {
+    display: inline-block;
+
+    &--auth {
+      margin: 0;
+    }
+    &--reg {
+      float: right;
+    }
+    &--logout {
+      display: block;
+    }
   }
 }

@@ -70,3 +70,12 @@
     opacity: 0.3;
   }
 }
+
+@media(max-width: $mobile-width){
+  .button-user--logout {
+    width: 100%;
+    max-width: 320px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}

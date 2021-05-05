@@ -122,3 +122,36 @@
     }
   }
 }
+
+@media(max-width: $mobile-width){
+  .nav-menu__list {
+    display: block;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .nav-menu__item {
+    &--logo {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &--order {
+      float: right;
+    }
+    display: inline-block;
+  }
+
+  .nav-menu__logo {
+    margin: 0 auto;
+  }
+
+  .nav-menu__search {
+    display: none;
+  }
+
+  .nav-menu__link {
+    &--bookmark, &--basket {
+      display: inline-block;
+    }
+  }
+}

@@ -42,3 +42,10 @@ a {
   padding-right: 30px;
   margin: 0 auto;
 }
+
+@media(max-width: $mobile-width){
+  .wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
