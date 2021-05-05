@@ -8,7 +8,6 @@
 
 .nav-pages__list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -55,5 +54,15 @@
 
   &:active {
     opacity: 0.5;
+  }
+}
+
+@media(max-width: $tablet-width){
+  .nav-pages--header {
+    padding: 0;
+  }
+
+  .nav-pages--header .nav-pages__link {
+    padding: 15px;
   }
 }

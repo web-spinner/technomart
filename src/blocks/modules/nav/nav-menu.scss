@@ -96,3 +96,29 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .nav-menu__item {
+    &--search  {
+      //margin-right: 0;
+      //max-width: 270px;
+    }
+  }  
+
+  .nav-menu__link {
+    &--bookmark,
+    &--basket {
+      width: auto;
+      padding-left: 35px;
+      padding-right: 10px;
+    }
+    &--bookmark span,
+    &--basket span {
+      display: none;
+    }
+    &--bookmark::before,
+    &--basket::before {
+      left: 10px;
+    }
+  }
+}

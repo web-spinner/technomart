@@ -73,3 +73,14 @@
   font-size: 14px;
   color: $color-dark;
 }
+
+@media(max-width: $tablet-width){
+  .header__box--middle {
+    .header__flex {
+      justify-content: space-around;
+    }
+  }
+  .header__desc-wrap {
+    display: none;
+  }
+}

@@ -23,3 +23,9 @@
     padding-bottom: 19px;
   }
 }
+
+@media (max-width: $tablet-width){
+  .logo {
+    width: 200px;
+  }
+}
