@@ -43,3 +43,30 @@
   margin-top: 20px;
   margin-left: 20px;
 }
+
+@media(max-width: $tablet-width){
+  .category {
+    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .category__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .category__item:nth-child(even),
+  .category__item:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .category__item:nth-child(2n+3) {
+    margin-left: 20px;
+  }
+
+  .category__item:nth-child(1) {
+    flex-basis: 100%;
+  }
+}
