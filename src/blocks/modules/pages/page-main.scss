@@ -33,3 +33,9 @@
     margin-top: 30px;
   }
 }
+
+@media(max-width: $mobile-width){
+  .page-main__category {
+    margin: 0;
+  }
+}

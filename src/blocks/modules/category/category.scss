@@ -70,3 +70,9 @@
     flex-basis: 100%;
   }
 }
+
+@media(max-width: $mobile-width){
+  .category {
+    display: none;
+  }
+}
