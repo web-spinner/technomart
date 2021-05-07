@@ -50,3 +50,14 @@
   width: 100%;
   text-align: center;
 }
+
+@media(max-width: $tablet-width){
+  .brands {
+    max-width: 620px;
+    margin: 20px auto 0;
+  }
+
+  .brands__list {
+    justify-content: space-evenly;
+  }
+}

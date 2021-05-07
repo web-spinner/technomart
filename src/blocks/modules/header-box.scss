@@ -21,3 +21,18 @@
 .header-box--blue-light {
   background-color: $bg-blue-light;
 }
+
+@media(max-width: $tablet-width){
+  .header-box {
+    box-sizing: border-box;
+    max-width: 620px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-box__title {
+    font-size: 28px;
+    //margin-right: 15px;
+  }
+}

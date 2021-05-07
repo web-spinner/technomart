@@ -185,3 +185,11 @@
     }
   }
 }
+
+@media(max-width: $tablet-width){
+  .btn {
+    &--popular, &--brands {
+      max-width: 200px;
+    }
+  }
+}

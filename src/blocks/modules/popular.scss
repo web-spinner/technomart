@@ -6,3 +6,14 @@
   padding: 0;
   list-style: none;
 }
+
+@media(max-width: $tablet-width) {
+  .popular {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .popular__list {
+    justify-content: space-evenly;
+  }
+}
