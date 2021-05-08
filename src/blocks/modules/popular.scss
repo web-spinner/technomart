@@ -17,3 +17,17 @@
     justify-content: space-evenly;
   }
 }
+
+@media(max-width: $mobile-width) {
+  .popular__list {
+    display: block;
+    margin-top: 0;
+    text-align: center;
+  }
+  .popular__item {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+}
