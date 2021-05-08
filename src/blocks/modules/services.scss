@@ -21,3 +21,13 @@
 .services__tabs {
   margin-top: 20px;
 }
+
+@media(max-width: $tablet-width){
+  .services {
+    padding-top: 30px;
+  }
+
+  .services__tabs {
+    padding-top: 10px;
+  }
+}

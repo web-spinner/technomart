@@ -144,3 +144,26 @@
 .tabs__btn {
   margin-top: 25px;
 }
+
+@media(max-width: $tablet-width){
+  .tabs__list {
+    max-width: 220px;
+    padding: 45px 0 45px;
+  }
+
+  .tabs__box {
+    margin-left: 30px;
+
+    &--delivery {
+      background-size: 325px auto;
+    }
+
+    &--guarantee {
+      background-size: 220px auto;
+    }
+
+    &--credit {
+      background-size: 290px auto;
+    }
+  }
+}
