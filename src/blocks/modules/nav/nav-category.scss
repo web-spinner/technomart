@@ -33,3 +33,19 @@
     opacity: 0.5;
   }
 }
+
+@media(max-width: $tablet-width){
+  .nav-category {
+    width: auto;
+    max-width: none;
+  }
+
+  .nav-category__list {
+    justify-content: flex-end;
+  }
+
+  .nav-category__item {
+    margin: 0;
+    margin-right: 30px;
+  }
+}

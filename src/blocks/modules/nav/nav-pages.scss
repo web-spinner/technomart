@@ -73,6 +73,21 @@
   .nav-pages--header .nav-pages__link {
     padding: 15px;
   }
+
+  .nav-pages--footer {
+    width: auto;
+    max-width: none;
+    margin: 0;
+  }
+
+  .nav-pages--footer .nav-pages__list {
+    justify-content: flex-end;
+  }
+
+  .nav-pages--footer .nav-pages__item {
+    margin: 0;
+    margin-right: 30px;
+  }
 }
 
 @media(max-width: $mobile-width){

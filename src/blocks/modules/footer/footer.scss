@@ -88,3 +88,44 @@
     color: $color-red;
   }
 }
+
+@media(max-width: $tablet-width){
+  .footer__inner {
+    align-items: center;
+  }
+
+  .footer__contacts {
+    width: 100%;
+    max-width: 170px;
+  }
+
+  .footer__nav-pages, .footer__nav-category {
+    flex-basis: 70%;
+  }
+
+  .footer__box--bottom {
+    padding: 40px 0 32px;
+  }
+
+  .footer__box--bottom .footer__inner {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__copyright {
+    flex-basis: 35%;
+    margin: 0;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+
+  .footer__text-wrap {
+    flex-basis: 35%;
+  }
+
+  .footer__text {
+    margin: 0;
+  }
+}
