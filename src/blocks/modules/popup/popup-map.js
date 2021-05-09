@@ -1,9 +1,8 @@
 $(document).ready(function(){
-  ymaps.ready(init);
   function init(){
     var myMap = new ymaps.Map("map", {
       center: [59.939426422586656,30.316444163970882],
-      zoom: 16,
+      zoom: getZoom(checkScreen()),
       controls: ['zoomControl']
     })
 
@@ -17,17 +16,47 @@ $(document).ready(function(){
     });
 
     myMap.geoObjects.add(myPlacemark);
+
+  }
+
+  const checkScreen = () => {
+    let width = document.body.clientWidth;
+    let screen; 
+    if(width > 1079) screen = 'Desctop';
+    if(width < 1080 && width > 767) screen = 'Tablet';  
+    if(width < 768) screen = 'Mobile';
+    return screen;
+  }
+
+  const getZoom = (screen) => {
+    let center;
+    switch(screen){
+      case 'Desctop':
+        zoom = 16;
+        break;
+      case 'Tablet':
+        zoom = 15;
+        break;
+      case 'Mobile':
+        zoom = 14;
+        break;
+      default:
+        zoom = false;
+        break;
+    }
+    return zoom;
   }
 
   let buttonOpen = $('#btn-open-map');
   let buttonClose = $('#btn-close-map');
-  let popupWrite = $('.popup-map');
+  let popupMap = $('.popup-map');
 
   buttonClose.click(function(){
-    popupWrite.hide();
+    popupMap.hide();
   });
 
   buttonOpen.click(function(){
-    popupWrite.show();
+    ymaps.ready(init);
+    popupMap.show();
   });
 });
