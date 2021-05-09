@@ -146,8 +146,13 @@
 }
 
 @media(max-width: $tablet-width){
+  .tabs {
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
   .tabs__list {
-    max-width: 220px;
+    max-width: 200px;
     padding: 45px 0 45px;
   }
 
@@ -155,15 +160,15 @@
     margin-left: 30px;
 
     &--delivery {
-      background-size: 325px auto;
+      background-size: 250px auto;
     }
 
     &--guarantee {
-      background-size: 220px auto;
+      background-size: 135px auto;
     }
 
     &--credit {
-      background-size: 290px auto;
+      background-size: 210px auto;
     }
   }
 }
