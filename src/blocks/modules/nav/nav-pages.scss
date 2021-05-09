@@ -45,6 +45,14 @@
   padding: 0;
 }
 
+.nav-pages--footer .nav-pages__item {
+  margin-right: 59px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .nav-pages--footer .nav-pages__link {
   font-size: 18px;
   line-height: 24px;

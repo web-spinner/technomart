@@ -5,10 +5,17 @@
 
 .nav-category__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
   list-style: none;
+}
+
+.nav-category__item {
+  margin-right: 59px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .nav-category__link {
