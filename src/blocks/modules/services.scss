@@ -31,3 +31,19 @@
     padding-top: 10px;
   }
 }
+
+@media(max-width: $mobile-width){
+  .services__title {
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 28px;
+  }
+
+  .services__desc {
+    margin: 15px auto 0;
+  }
+
+  .services__tabs {
+    margin-top: 40px;
+  }
+}
