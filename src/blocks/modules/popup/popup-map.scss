@@ -31,3 +31,9 @@
 .popup-map__hint {
   color: $color-red-secondery;
 }
+
+@media(max-width: $tablet-width){
+  .popup-map {
+    max-width: 620px;
+  } 
+}
