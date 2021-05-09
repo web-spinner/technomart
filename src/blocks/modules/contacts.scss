@@ -37,3 +37,9 @@
 .contacts__btn {
   margin-top: 38px;
 }
+
+@media(max-width: $mobile-width){
+  .contacts__title {
+    font-size: 28px;
+  }
+}
