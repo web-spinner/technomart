@@ -36,3 +36,14 @@
   transform: translate(-50%, -50%);
   fill: $color-white;
 }
+
+@media(max-width: $mobile-width){
+  .social {
+    display: block;
+    text-align: center;
+  }
+
+  .social__item {
+    display: inline-block;
+  }
+}

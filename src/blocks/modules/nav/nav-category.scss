@@ -49,3 +49,13 @@
     margin-right: 30px;
   }
 }
+
+@media(max-width: $mobile-width){
+  .nav-category__list {
+    display: block;
+  }
+
+  .nav-category__item {
+    display: inline-block;
+  }
+}
