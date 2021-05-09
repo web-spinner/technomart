@@ -74,3 +74,31 @@
   top: 9px;
   right: 9px;
 }
+
+@media(max-width: $mobile-width){
+  .popup-write {
+    max-width: 300px;
+    padding-top: 25px;
+  }
+
+  .popup-write__list {
+    display: block;
+  }
+
+  .popup-write__item {
+    flex-basis: 100%;
+  }
+
+  .popup-write__item + .popup-write__item {
+    margin-top: 15px;
+  }
+
+  .popup-write__input {
+    max-width: 100%;
+  }
+
+  .popup-write__wrap--btn {
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+}
