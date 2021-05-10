@@ -42,19 +42,19 @@
 .button-user--auth::before {
   display: block;
   left: 14px;
-  background-image: url('/img/icon-login.svg');
+  background-image: url('../img/icon-login.svg');
 }
 
 .button-user--logout::before {
   display: block;
   left: 13px;
-  background-image: url('/img/icon-user.svg');
+  background-image: url('../img/icon-user.svg');
 }
 
 .button-user--logout::after {
   display: block;
   right: 10px;
-  background-image: url('/img/icon-logout.svg');
+  background-image: url('../img/icon-logout.svg');
 }
 
 .button-user:hover, .button:focus {
