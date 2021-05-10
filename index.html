@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d9b90687-9646-4066-825d-0b741ff376d4&lang=ru_RU"
+        type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+  <div class="header__box header__box--top">
+    <div class="wrap">
+      <nav class="header__nav-menu nav-menu">
+        <ul class="nav-menu__list">
+          <li class="nav-menu__item nav-menu__item--logo">
+            <a class="nav-menu__logo logo" href="./index.html">
+              <svg width="147" height="18" role="img">
+                <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-menu__item nav-menu__item--search">
+            <div class="nav-menu__search search">
+              <input class="search__input" type="search" id="search" placeholder="Поиск:">
+              <label class="search__label" for="search">
+                <svg width="17" height="17" aria-hidden="true" role="presentation">
+                  <use xlink:href="./img/sprites/sprite.svg#icon-search"></use>
+                </svg>
+              </label>
+            </div>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--bookmark" href="#" aria-label="Закладки"><span>Закладки: </span>0</a>
+          </li>
+          <li class="nav-menu__item">
+            <a class="nav-menu__link nav-menu__link--basket" href="#" aria-label="Корзина"><span>Корзина: </span>0</a>
+          </li>
+          <li class="nav-menu__item nav-menu__item--order">
+            <a class="nav-menu__link nav-menu__link--order" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="header__box header__box--middle">
+    <div class="wrap">
+      <div class="header__flex">
+        <div class="header__desc-wrap">
+          <p class="header__desc-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        </div>
+        <div class="header__contacts">
+          <p class="header__tel">+7 (812) 555-05-55</p>
+          <p class="header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="header__user-menu user-menu">
+          <ul class="user-menu__list user-menu__list--buttons">
+            <li class="user-menu__item user-menu__item--auth">
+              <a class="button-user button-user--auth user-menu__btn" href="#">Войти</a>
+            </li>
+            <li class="user-menu__item user-menu__item--reg">
+              <a class="button-user button-user--reg user-menu__btn" href="#">Регистрация</a>
+            </li>
+            <li class="user-menu__item user-menu__item--logout user-menu__item--hidden">
+              <a class="button-user button-user--logout user-menu__btn" href="#">Равшан Джамшутович</a>
+            </li>
+          </ul>
+          <ul class="user-menu__list user-menu__list--links user-menu__list--hidden">
+            <li class="user-menu__item user-menu__item--orders">
+              <a class="user-menu__link" href="#">Мои заказы</a>
+            </li>
+            <li class="user-menu__item user-menu__item--account">
+              <a class="user-menu__link" href="#">Личный кабинет</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__box header__box--bottom">
+    <div class="wrap">
+      <nav class="header__nav-pages nav-pages nav-pages--header">
+        <ul class="nav-pages__list">
+          <li class="nav-pages__item"><a class="nav-pages__link" href="./index.html">Главная</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Компания</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="./pages/catalog.html">Каталог</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Новости</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Спецпредложения</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Доставка</a></li>
+          <li class="nav-pages__item"><a class="nav-pages__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Магазин Technomart</h1>
+      <div class="page-main__category">
+        <div class="wrap">
+          <section class="category">
+            <h2 class="visually-hidden">Категории</h2>
+            <ul class="category__list">
+              <li class="category__item">
+                <div class="category__carousel carousel">
+                  <div class="carousel__item">
+                    <div class="carousel__head">
+                      <h3 class="carousel__title">Перфораторы</h3>
+                      <p class="carousel__text">Настоящие мужские игрушки</p>
+                    </div>
+                    <div class="carousel__img">
+                      <picture>
+                        <img src="img/slide-1.jpg" srcset="img/slide-1@2x.jpg 2x, img/slide-1@3x.jpg 3x" alt="Перфораторы">
+                      </picture>
+                    </div>
+                    <a class="btn btn--primary btn--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
+                  </div>
+                  <div class="carousel__item">
+                    <div class="carousel__head">
+                      <h3 class="carousel__title">Дрели</h3>
+                      <p class="carousel__text">Соседям на радость!</p>
+                    </div>
+                    <div class="carousel__img">
+                      <picture>
+                        <img src="img/slide-2.jpg" srcset="img/slide-2@2x.jpg 2x, img/slide-2@3x.jpg 3x" alt="Дрели">
+                      </picture>
+                    </div>
+                    <a class="btn btn--primary btn--carousel carousel__btn" href="catalog.html">Открыть каталог</a>
+                  </div>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__card category-card category-card--material category-card--new">
+                  <h3 class="category-card__title">Материалы</h3>
+                  <a class="btn btn--category category-card__link" href="#">На любой вкус</a>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__card category-card category-card--tools">
+                  <h3 class="category-card__title">Инструмент</h3>
+                  <a class="btn btn--category category-card__link" href="#">На все сдучаи</a>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__card category-card category-card--machinery">
+                  <h3 class="category-card__title">Техника</h3>
+                  <a class="btn btn--category category-card__link" href="#">Для стройки</a>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__card category-card category-card--discounts">
+                  <h3 class="category-card__title">Скидки 50%</h3>
+                  <a class="btn btn--category category-card__link" href="#">На 350 товаров</a>
+                </div>
+              </li>
+              <li class="category__item">
+                <div class="category__card category-card category-card--delivery">
+                  <h3 class="category-card__title">Доставка</h3>
+                  <a class="btn btn--category category-card__link" href="#">Бесплатно</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="page-main__popular">
+        <div class="wrap">
+          <section class="popular">
+            <div class="header-box popular__head">
+              <h2 class="header-box__title">Популярные товары:</h2>
+              <a class="btn btn--primary btn--popular header-box__btn" href="#">Все популярные товары</a>
+            </div>
+            <ul class="popular__list">
+              <li class="popular__item">
+                <article class="popular__card card">
+                  <div class="card__img">
+                    <picture>
+                      <img src="img/bosch-9000.jpg" srcset="img/bosch-9000@2x.jpg 2x, img/bosch-9000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 9000">
+                    </picture>
+                  </div>
+                  <h3 class="card__title">Перфоратор BOSCH BFG 9000</h3>
+                  <p class="card__price-old">32500 Р.</p>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>25500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
+                  </div>
+                </article>
+              </li>
+              <li class="popular__item">
+                <article class="popular__card card">
+                  <div class="card__img">
+                    <picture>
+                      <img src="img/bosch-3000.jpg" srcset="img/bosch-3000@2x.jpg 2x, img/bosch-3000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 3000">
+                    </picture>
+                  </div>
+                  <h3 class="card__title">Перфоратор BOSCH BFG 3000</h3>
+                  <p class="card__price-old">22500 Р.</p>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>15500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
+                  </div>
+                </article>
+              </li>
+              <li class="popular__item">
+                <article class="popular__card card">
+                  <div class="card__img">
+                    <picture>
+                      <img src="img/bosch-6000.jpg" srcset="img/bosch-6000@2x.jpg 2x, img/bosch-6000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 6000">
+                    </picture>
+                  </div>
+                  <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
+                  <p class="card__price-old">30500 Р.</p>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>25500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
+                  </div>
+                </article>
+              </li>
+              <li class="popular__item">
+                <article class="popular__card card card--new">
+                  <div class="card__img">
+                    <picture>
+                      <img src="img/bosch-2000.jpg" srcset="img/bosch-2000@2x.jpg 2x, img/bosch-2000@3x.jpg 3x" width="220" alt="Перфоратор BOSCH BFG 2000">
+                    </picture>
+                  </div>
+                  <h3 class="card__title">Перфоратор BOSCH BFG 2000</h3>
+                  <a class="btn btn--primary btn--price card__price-btn" href="#" aria-label="Купить">
+                    <span>12500 Р.</span>
+                    <svg width="141" height="38" aria-hidden="true">
+                      <use xlink:href="img/sprites/sprite.svg#red-button"></use>
+                    </svg>
+                  </a>
+                  <div class="card__buttons">
+                    <button class="btn btn--buy card__btn card--buy" type="button">Купить</button>
+                    <button class="btn btn--bookmark card__btn card__btn--bookmark" type="button">В закладки</button>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="page-main__brands">
+        <div class="wrap">
+          <section class="brands">
+            <div class="header-box brands__head">
+              <h2 class="header-box__title brands__title">Популярные производители:</h2>
+              <a class="btn btn--primary btn--brands header-box__btn" href="#">Все производители</a>
+            </div>
+            <ul class="brands__list">
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/bosch.png" srcset="img/bosch@2x.png 2x, img/bosch@3x.png 3x" alt="Bosch">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/makita.png" srcset="img/makita@2x.png 2x, img/makita@3x.png 3x" alt="Makita">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/de-walt.png" srcset="img/de-walt@2x.png 2x, img/de-walt@3x.png 3x" alt="DeWalt">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/interskol.png" srcset="img/interskol@2x.png 2x, img/interskol@3x.png 3x" alt="Интерскол">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/hitachi.png" srcset="img/hitachi@2x.png 2x, img/hitachi@3x.png 3x" alt="Hitachi">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/lg.png" srcset="img/lg@2x.png 2x, img/lg@3x.png 3x" alt="LG">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/aeg.png" srcset="img/aeg@2x.png 2x, img/aeg@3x.png 3x" alt="AEG Power Solutions">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+              <li class="brands__item">
+                <a class="brands__link" href="#">
+                  <div class="brands__logo">
+                    <picture>
+                      <img src="img/metabo.png" srcset="img/metabo@2x.png 2x, img/metabo@3x.png 3x" alt="Metabo">
+                    </picture>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div class="page-main__services">
+        <div class="wrap">
+          <section class="services">
+            <h2 class="services__title">Сервисы</h2>
+            <p class="services__desc">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <div class="services__tabs tabs" id="tabs-ui">
+              <ul class="tabs__list">
+                <li class="tabs__item"><a class="tabs__link" href="#tabs-1">Доставка</a></li>
+                <li class="tabs__item"><a class="tabs__link" href="#tabs-2">Гарантия</a></li>
+                <li class="tabs__item"><a class="tabs__link" href="#tabs-3">Кредит</a></li>
+              </ul>
+              <div class="tabs__box tabs__box--delivery" id="tabs-1">
+                <h3 class="tabs__title">Доставка</h3>
+                <p class="tabs__text">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+              </div>
+              <div class="tabs__box tabs__box--guarantee" id="tabs-2">
+                <h3 class="tabs__title">Гарантия</h3>
+                <p class="tabs__text">Если купленный у нас товар поломается или заискрит, <br> а также в случае пожара, спровоцированного его возгаранием, <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br> сгоревший товар на новый. <br> Дом уж восстановите как-нибудь сами.</p>
+              </div>
+              <div class="tabs__box tabs__box--credit" id="tabs-3">
+                <h3 class="tabs__title">Кредит</h3>
+                <p class="tabs__text">Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.</p>
+                <a class="btn btn--primary btn--services tabs__btn" href="#">Отправить заявку</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="page-main__info">
+          <section class="page-main__about about">
+            <h2 class="about__title">Компания «Техномарт»</h2>
+            <p class="about__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+            <p class="about__text about__text--bottom">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <ul class="about__list">
+              <li class="about__item">Деловые линии</li>
+              <li class="about__item">Автотрейдинг</li>
+              <li class="about__item">ЖелДорЭкспедиция</li>
+            </ul>
+            <a class="btn btn--primary btn--about about__btn" href="#">Подробнее о компании</a>
+          </section>
+          <section class="page-main__contacts contacts">
+            <h2 class="contacts__title">Контакты</h2>
+            <p class="contacts__text">Вы можете забрать товар сами, 
+            заехав в наш офис:</p>
+            <button class="contacts__map-btn" id="btn-open-map">
+              <picture>
+                <img width="300" src="img/map-small.png" srcset="img/map-small@2x.png 2x, img/map-small@3x.png 3x" alt="Большая Конюшенная ул, 19">
+              </picture>
+            </button>
+            <button class="btn btn--primary btn--contacts contacts__btn" id="btn-open-write">Заблудились? Напишите нам!</button>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="footer__box footer__box--top">
+    <div class="wrap">
+      <div class="footer__inner">
+        <a class="footer__logo logo logo--big" href="./index.html">
+          <svg width="138" height="21" role="img">
+            <use xlink:href="./img/sprites/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <div class="footer__contacts">
+          <p class="footer__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="footer__phone">+7 (812) 555-05-55</p>
+        </div>
+        <nav class="footer__nav-pages nav-pages nav-pages--footer">
+          <ul class="nav-pages__list">
+            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Компания</a></li>
+            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Новости</a></li>
+            <li class="nav-pages__item"><a class="nav-pages__link" href="./pages/catalog.html">Каталог</a></li>
+            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Доставка</a></li>
+            <li class="nav-pages__item"><a class="nav-pages__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav-category nav-category">
+          <ul class="nav-category__list">
+            <li class="nav-category__item"><a class="nav-category__link" href="#">Материалы</a></li>
+            <li class="nav-category__item"><a class="nav-category__link" href="#">Техника</a></li>
+            <li class="nav-category__item"><a class="nav-category__link" href="#">Инструмент</a></li>
+            <li class="nav-category__item"><a class="nav-category__link" href="#">Спецпредложения</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="footer__box footer__box--bottom">
+    <div class="wrap">
+      <div class="footer__inner">
+        <p class="footer__copyright">&copy; 2010–2017 Компания «Техномарт» <br> Все права защищены</p>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в Вконтакте">
+              <svg width="26" height="15" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprites/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+              <svg width="12" height="22" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprites/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Мы в Инстаграмм">
+              <svg width="21" height="21" aria-hidden="true" role="presentation">
+                <use xlink:href="./img/sprites/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__text-wrap">
+          <p class="footer__text footer__text--feedback">Обратная связь: <br><a class="footer__link footer__link--feedback" href="#">mail@htmlacademy.ru</a></p>
+          <p class="footer__text footer__text--develop">Разработано — <br><a class="footer__link footer__link--develop" href="#">htmlacademy.ru</a></p> 
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <section class="popup-write" style="display:none;">
+  <h2 class="visually-hidden">Напишите нам!</h2>
+  <form action="#">
+    <div class="popup-write__wrap">
+      <div class="popup-write__inner popup-write__inner--flex">
+        <ul class="popup-write__list">
+          <li class="popup-write__item poput-write__item--name">
+            <label class="label popup-write__label" for="write-name">Ваше имя:</label>
+            <input class="input input--text popup-write__input" id="write-name" type="text" placeholder="Представьтесь, пожалуйста" name="name">
+          </li>
+          <li class="popup-write__item popup-write__item--email">
+            <label class="label popup-write__label" for="write-email">Ваш e-mail:</label>
+            <input class="input input--email popup-write__input" id="write-email" type="email" placeholder="Для отправки ответа" name="email">
+          </li>
+          <li class="popup-write__item popup-write__item--message">
+            <label class="label popup-write__label" for="write-message">Текст письма:</label>
+            <textarea class="textarea textarea--write popup-write__textarea" id="write-message" placeholder="В свободной форме" name="message"></textarea>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="popup-write__wrap popup-write__wrap--btn">
+      <div class="popup-write__inner">
+        <button class="btn btn--primary btn--write popup-write__btn popup-write__btn-submit" type="submit">Отправить</button>
+      </div>
+    </div>
+  </form>
+  <button class="btn-close popup-write__btn-close" id="btn-close-write" type="button">
+    <span class="visually-hidden">Закрыть</span>
+    <svg width="21" height="21" aria-hidden="true">
+      <use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+</section>
+
+    <section class="popup-map" style="display: none;">
+  <div class="popup-map__api" id="map" style="width: 100%; height: 446px;"></div>
+  <button id="btn-close-map" class="btn-close popup-map__btn-close" type="button">
+    <span class="visually-hidden">Закрыть</span>
+    <svg width="21" height="21" aria-hidden="true">
+      <use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+</section>
+
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+  </body>
+</html>
