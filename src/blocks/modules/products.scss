@@ -21,3 +21,16 @@
     margin: 0;
   }
 }
+
+@media(max-width: $tablet-width){
+  .products__list {
+    margin-top: 0;
+    display: block;
+  }
+  
+  .products__item {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+}

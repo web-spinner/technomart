@@ -95,3 +95,14 @@
     padding-bottom: 40px;
   }
 }
+
+@media(max-width: $mobile-width){
+  .page-catalog__grid {
+    padding: 0 15px;
+  }
+
+  .page-catalog .page-catalog__subtitle {
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}

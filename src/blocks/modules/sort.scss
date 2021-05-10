@@ -86,3 +86,22 @@
   margin-right: 0;
 }
 
+@media(max-width: $mobile-width){
+  .sort {
+    display: block;
+  }
+
+  .sort__title {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  .sort__list {
+    display: inline-block;
+  }
+
+  .sort__item {
+    display: inline-block;
+    margin-right: 25px;
+  }
+}

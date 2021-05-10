@@ -84,3 +84,20 @@
     align-self: flex-end;
   }
 }
+
+@media(max-width: $mobile-width){
+  .filter__wrap {
+    display: block;
+  }
+
+  .filter__box {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+
+    &-price {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
+}
