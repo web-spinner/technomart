@@ -58,3 +58,29 @@
 .filter__submit {
   margin-top: 60px;
 }
+
+@media(max-width: $tablet-width){
+  .filter {
+    max-width: 100%;
+  }
+
+  .filter__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .filter__box {
+    margin: 0;
+    margin-right: 50px;
+    &-price {
+      flex-basis: 220px;
+    }
+    border: none;
+  }
+
+  .filter__submit {
+    margin: 0;
+    align-self: flex-end;
+  }
+}
